@@ -4,6 +4,7 @@
  */
 
 // The editor creator to use.
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import InlineEditorBase from '@ckeditor/ckeditor5-editor-inline/src/inlineeditor';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
@@ -58,6 +59,7 @@ export default class InlineEditor extends InlineEditorBase {}
 // Plugins to include in the build.
 InlineEditor.builtinPlugins = [
 	Autoformat,
+	Alignment,
 	Base64UploadAdapter,
 	BlockQuote,
 	Bold,
